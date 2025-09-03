@@ -14,12 +14,17 @@ public class SpawnObject : MonoBehaviour
 
     private IEnumerator SpawnTime()
     {
-        float time = Random.Range(1, 2);
-
         while (true)
         {
-            yield return new WaitForSeconds(1);
-            Instantiate(_object, _spawnPoint.position, Quaternion.Euler(0, 90, 0));
+            yield return new WaitForSeconds(2.5f);
+            Instantiate(_object, _spawnPoint.position, Quaternion.identity);  
+            
+
+/*
+            float time = Random.Range(2,4);
+            yield return new WaitForSeconds(2.5f);
+            GameObject randomObject = _object[Random.Range(0, _object.Length)];
+            Instantiate(randomObject, _spawnPoint.position, Quaternion.Euler(0, 90, 0)); */
         }
         
     }
