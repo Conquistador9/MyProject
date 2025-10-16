@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 248543404591500915}
   m_Layer: 0
   m_Name: Beatall
-  m_TagString: Untagged
+  m_TagString: Hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

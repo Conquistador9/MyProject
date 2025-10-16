@@ -11,7 +11,9 @@ public class Animations : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void JumpAnim() => _animator.SetBool("Jump", true);
+    public void RunAnim() => _animator.SetBool("Moved", true);
 
-    public void RunAnim() => _animator.SetBool("Jump", false);
+    public void Idle() => _animator.SetBool("Moved", false);
+
+    public void Death() => _animator.SetTrigger("Death");
 }
