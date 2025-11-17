@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
 
     private void OnCollisionEnter(Collision collision)
-    {
+    { 
         if(collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
       //      _animations.RunAnim();

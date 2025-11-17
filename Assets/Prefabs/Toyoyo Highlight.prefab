@@ -87,7 +87,7 @@ PrefabInstance:
       addedObject: {fileID: 6633502273487420605}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e762057a151f9f408f164aeb3e031ad, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4758249918206177189}
+      addedObject: {fileID: 476142187115462929}
   m_SourcePrefab: {fileID: 100100000, guid: 2e762057a151f9f408f164aeb3e031ad, type: 3}
 --- !u!1 &8010724981569933794 stripped
 GameObject:
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 652.5
---- !u!82 &4758249918206177189
+--- !u!82 &476142187115462929
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,7 +165,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f90a0f8d46f3fe744afad2c5262e38e0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 79dbfc9293c35c7408dee65d067dd85e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -175,8 +175,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 0.57
+  MaxDistance: 36.37
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -211,7 +211,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
