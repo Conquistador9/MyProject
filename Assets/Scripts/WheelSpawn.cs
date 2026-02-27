@@ -6,6 +6,7 @@ public class WheelSpawn : MonoBehaviour
 {
     [SerializeField] private GameObject _object;
     [SerializeField] private Transform _spawnPoint;
+    [SerializeField] private AudioSource _spownSong;
 
     private void Start()
     {
@@ -18,6 +19,7 @@ public class WheelSpawn : MonoBehaviour
         {
             yield return new WaitForSeconds(2.5f);
             Instantiate(_object, _spawnPoint.position, Quaternion.Euler(0, 90, 0));
+            _spownSong.Play();
         }
     }
 }
