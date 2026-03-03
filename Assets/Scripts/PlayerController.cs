@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -26,30 +23,15 @@ public class PlayerController : MonoBehaviour
         _rb.velocity = new Vector3(Input.GetAxisRaw("Horizontal") * _speed, _rb.velocity.y, 0);
     }
 
-
-    private void OnCollisionEnter(Collision collision)
-    { 
-        if(collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        {
-      //      _animations.RunAnim();
-        }
-    }
-
     private void MoveCharacter()
     {
         if(_rb.velocity.x > 0)
-        {
             _animations.RunAnim();
-        }
 
         else if(_rb.velocity.x < 0)
-        {
             _animations.RunAnim();
-        }
 
         else if (_rb.velocity.x == 0)
-        {
             _animations.Idle();
-        }
     }
 }

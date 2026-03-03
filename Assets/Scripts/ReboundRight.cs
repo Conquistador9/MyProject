@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ReboundRight : MonoBehaviour
@@ -15,7 +14,6 @@ public class ReboundRight : MonoBehaviour
         {
             _playerController.enabled = false;
             _rb.AddForce(Vector3.left * _bounceForce, ForceMode.Impulse);
-            Debug.Log("gol");
             StartCoroutine(PlayerControllerOn());
         }
     }
