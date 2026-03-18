@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
+    [SerializeField] private UIAnim _uiAnim;
+    [SerializeField] private PlayCamera _playCamera;
     [SerializeField] private Timer _timer;
     [SerializeField] private GameObject _panel;
     [SerializeField] private GameObject _player;
@@ -17,6 +19,8 @@ public class GameOver : MonoBehaviour
             _panel.SetActive(true);
             _timer.OnGameOver();
             _timer.UpdateAllTexts();
+            _playCamera.CameraPlay();
+            _uiAnim.PlayButtonAnim();
         }
     }
 }
