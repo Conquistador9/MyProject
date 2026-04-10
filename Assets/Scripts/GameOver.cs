@@ -10,6 +10,7 @@ public class GameOver : MonoBehaviour
     [SerializeField] private GameObject _panel;
     [SerializeField] private GameObject _player;
     [SerializeField] private GameObject _timerTime;
+    [SerializeField] private GameObject _pauseButton;
 
     private void Update()
     {
@@ -21,6 +22,7 @@ public class GameOver : MonoBehaviour
             _timer.UpdateAllTexts();
             _playCamera.CameraPlay();
             _uiAnim.PlayButtonAnim();
+            _pauseButton.SetActive(false);
         }
     }
 }
