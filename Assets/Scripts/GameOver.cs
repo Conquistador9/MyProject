@@ -11,6 +11,8 @@ public class GameOver : MonoBehaviour
     [SerializeField] private GameObject _player;
     [SerializeField] private GameObject _timerTime;
     [SerializeField] private GameObject _pauseButton;
+    [SerializeField] private GameObject _soundButton;
+    [SerializeField] private GameObject _soundOffButton;
 
     private void Update()
     {
@@ -23,6 +25,8 @@ public class GameOver : MonoBehaviour
             _playCamera.CameraPlay();
             _uiAnim.PlayButtonAnim();
             _pauseButton.SetActive(false);
+            _soundButton.SetActive(false);
+            _soundOffButton.SetActive(false);
         }
     }
 }
