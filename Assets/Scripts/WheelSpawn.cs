@@ -17,7 +17,7 @@ public class WheelSpawn : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(2);
             Instantiate(_object, _spawnPoint.position, Quaternion.Euler(0, 90, 0));
             _spownSong.Play();
         }

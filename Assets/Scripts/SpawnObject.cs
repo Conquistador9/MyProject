@@ -15,7 +15,7 @@ public class SpawnObject : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(2);
             Instantiate(_object, _spawnPoint.position, Quaternion.identity);  
         }  
     }
