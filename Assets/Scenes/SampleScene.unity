@@ -328,6 +328,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 971598fa860f5c8479ec6bceaca6e39a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179e30276b74ca948b190178bb181711, type: 2}
     - target: {fileID: 919132149155446097, guid: 971598fa860f5c8479ec6bceaca6e39a, type: 3}
       propertyPath: m_Name
       value: building-i
@@ -379,10 +383,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1782902846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.69274366, y: 0.619}
-  m_AnchorMax: {x: 1, y: 0.7722303}
-  m_AnchoredPosition: {x: 3.8510132, y: -1.103302}
-  m_SizeDelta: {x: -163.27, y: -34.03}
+  m_AnchorMin: {x: 0.5137434, y: 0.60917264}
+  m_AnchorMax: {x: 0.81348675, y: 0.7722303}
+  m_AnchoredPosition: {x: 2, y: 0.396698}
+  m_SizeDelta: {x: -157.27002, y: -37.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58469078
 MonoBehaviour:
@@ -790,6 +794,7 @@ GameObject:
   - component: {fileID: 160493642}
   - component: {fileID: 160493641}
   - component: {fileID: 160493644}
+  - component: {fileID: 160493645}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -885,6 +890,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 160493645}
+        m_TargetAssemblyTypeName: YG.EventsYG2, Assembly-CSharp
+        m_MethodName: _InterstitialAdvShow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &160493642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -944,6 +961,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &160493645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160493639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341f31e995335eb49bcb5f79b009a4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &175040799
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,7 +1014,7 @@ Transform:
   m_GameObject: {fileID: 175040799}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000007450581, y: 0.7071068, z: 0.000000029802322, w: 0.7071068}
-  m_LocalPosition: {x: 13.13, y: 14.48, z: 102.31}
+  m_LocalPosition: {x: 11.07, y: 13.67, z: 102.83}
   m_LocalScale: {x: 6.7806034, y: 6.7805996, z: 6.7806034}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1315,6 +1345,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cf1baad1307a94743a020a87e9b5faa6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ddf8757b48a805458070db8939b2dcf, type: 2}
     - target: {fileID: 919132149155446097, guid: cf1baad1307a94743a020a87e9b5faa6, type: 3}
       propertyPath: m_Name
       value: building-g
@@ -1604,6 +1638,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2b8c0fb0fec370b4f8ab8bfbdc7dcfc6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 238cabe2f9ef9a3428f8f48c2dc923ba, type: 2}
     - target: {fileID: 919132149155446097, guid: 2b8c0fb0fec370b4f8ab8bfbdc7dcfc6, type: 3}
       propertyPath: m_Name
       value: building-skyscraper-b
@@ -1958,7 +1996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0422\u0435\u043A\u0443\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F:"
+  m_text: "\u0421\u0435\u0439\u0447\u0430\u0441:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2049,10 +2087,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1782902846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.14774333, y: 0.33929318}
-  m_AnchorMax: {x: 0.526231, y: 0.5}
-  m_AnchoredPosition: {x: 0.52593994, y: 1}
-  m_SizeDelta: {x: -198.7284, y: -36.627594}
+  m_AnchorMin: {x: 0.2892567, y: 0.33929318}
+  m_AnchorMax: {x: 0.48748666, y: 0.5131726}
+  m_AnchoredPosition: {x: -0.3555298, y: -1}
+  m_SizeDelta: {x: -104.9415, y: -40.6276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &355477660
 PrefabInstance:
@@ -2190,10 +2228,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1782902846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.14774333, y: 0.596}
-  m_AnchorMax: {x: 0.74025637, y: 0.7722303}
-  m_AnchoredPosition: {x: -1.0893555, y: -1.5576782}
-  m_SizeDelta: {x: -310.7663, y: -39.604904}
+  m_AnchorMin: {x: 0.2892567, y: 0.59270686}
+  m_AnchorMax: {x: 0.50628334, y: 0.7722303}
+  m_AnchoredPosition: {x: 1, y: -1.0576782}
+  m_SizeDelta: {x: -115.556, y: -40.6049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &390432145
 CanvasRenderer:
@@ -2223,8 +2261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435
-    \u0432\u0440\u0435\u043C\u044F:"
+  m_text: "\u0420\u0435\u043A\u043E\u0440\u0434:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2436,6 +2473,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b072c0432182b204dac7649daa262248, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ddf8757b48a805458070db8939b2dcf, type: 2}
     - target: {fileID: 919132149155446097, guid: b072c0432182b204dac7649daa262248, type: 3}
       propertyPath: m_Name
       value: building-skyscraper-a
@@ -2651,6 +2692,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0de93334963ebc14eb0271e2bc18d2f0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179e30276b74ca948b190178bb181711, type: 2}
     - target: {fileID: 919132149155446097, guid: 0de93334963ebc14eb0271e2bc18d2f0, type: 3}
       propertyPath: m_Name
       value: building-f
@@ -3996,6 +4041,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7614c3ee45b1c8f468da23456712e399, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9c818573728d2ee41a6134a22c66f62c, type: 2}
     - target: {fileID: 919132149155446097, guid: 7614c3ee45b1c8f468da23456712e399, type: 3}
       propertyPath: m_Name
       value: building-j
@@ -4174,6 +4223,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ee72ae1aead32d0489f298e6f8666aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 238cabe2f9ef9a3428f8f48c2dc923ba, type: 2}
     - target: {fileID: 919132149155446097, guid: ee72ae1aead32d0489f298e6f8666aa1, type: 3}
       propertyPath: m_Name
       value: building-skyscraper-c
@@ -9017,10 +9070,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1782902846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.55248666, y: 0.33929318}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 1.2299805, y: 2.5}
-  m_SizeDelta: {x: -234.629, y: -37.627594}
+  m_AnchorMin: {x: 0.5137434, y: 0.35246578}
+  m_AnchorMax: {x: 0.8285133, y: 0.5}
+  m_AnchoredPosition: {x: -0.17767334, y: 0.5}
+  m_SizeDelta: {x: -166.0906, y: -33.6276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1573813574
 MonoBehaviour:
@@ -9542,7 +9595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e39085447f9e5c4986f8951254cf219, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.9
+      value: 41.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e39085447f9e5c4986f8951254cf219, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9550,7 +9603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e39085447f9e5c4986f8951254cf219, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 333.9
+      value: 326.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e39085447f9e5c4986f8951254cf219, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13179,7 +13232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 082c71ac8e13bb04391d181ecefecebf, type: 3}
       propertyPath: m_LocalScale.y
-      value: 119.29842
+      value: 100.79524
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 082c71ac8e13bb04391d181ecefecebf, type: 3}
       propertyPath: m_LocalScale.z
@@ -13191,7 +13244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 082c71ac8e13bb04391d181ecefecebf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.069999695
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 082c71ac8e13bb04391d181ecefecebf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13225,6 +13278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 082c71ac8e13bb04391d181ecefecebf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ddf8757b48a805458070db8939b2dcf, type: 2}
     - target: {fileID: 919132149155446097, guid: 082c71ac8e13bb04391d181ecefecebf, type: 3}
       propertyPath: m_Name
       value: low-detail-building-i

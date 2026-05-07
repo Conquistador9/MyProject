@@ -1,0 +1,23 @@
+{
+    "stringKeys": [],
+    "stringValues": [],
+    "floatKeys": [
+        "MaxTime",
+        "CurrentTime"
+    ],
+    "floatValues": [
+        29.582059860229493,
+        8.797893524169922
+    ],
+    "intKeys": [],
+    "intValues": [],
+    "intExample": 5,
+    "strExample": "Hello!",
+    "boolExample": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "idSave": 5469
+}

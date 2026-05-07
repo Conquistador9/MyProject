@@ -21,6 +21,10 @@ public class Rebound : MonoBehaviour
     private IEnumerator PlayerControllerOn()
     {
         yield return new WaitForSeconds(1);
-        _playerController.enabled = true;
+
+        if (_playerController)
+            _playerController.enabled = true;
+        else
+            yield break;
     }
 }
