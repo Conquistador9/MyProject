@@ -14,7 +14,6 @@ public class ObjectMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 forward = transform.right * _speed * Time.fixedDeltaTime;
-        _rb.MovePosition(_rb.position +  forward);
+        _rb.AddForce(Vector3.back * _speed, ForceMode.Force);
     }
 }
